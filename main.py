@@ -13,5 +13,6 @@ def streamwav():
                 data = fwav.read(1024)
     return Response(generate(), mimetype="audio/x-wav")
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
